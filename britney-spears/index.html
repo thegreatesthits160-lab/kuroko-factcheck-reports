@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>ブリトニー・スピアーズ伝記映画（仮）</title>
 <style>
 :root{--fg:#222;--bg:#fff;--accent:#8b5e3c;--muted:#666;--border:#ddd;--media-bg:#eee}
@@ -13,15 +16,25 @@
 html{font-size:19px}
 body{font-family:"Hiragino Mincho ProN","游明朝",serif;background:var(--bg);color:var(--fg);
   max-width:1400px;margin:0 auto;padding:24px 48px;line-height:1.85}
-header.page-head{border-bottom:2px solid var(--accent);padding-bottom:16px;margin-bottom:24px}
+header.page-head{border-bottom:2px solid var(--accent);padding-bottom:16px;margin-bottom:24px;
+  padding-right:240px}
 h1{font-size:1.7rem;margin:0 0 8px}
 .meta-line{color:var(--muted);font-size:.9rem}
-.toggle-bar{position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:10;
-  border-bottom:1px solid var(--border);display:flex;gap:12px;align-items:center}
-#lang-toggle{font-size:1rem;padding:8px 18px;border-radius:20px;border:1px solid var(--accent);
-  background:var(--accent);color:#fff;cursor:pointer}
+/* 言語切替を右上の小さなコーナーウィジェットに常設（2026-07-22改訂）。
+   島田さん指摘「そんなに切り替えることはないので、表示部分を圧迫しない場所へ」への対応。
+   本文の読み幅を邪魔しないよう画面外枠（fixed）に置き、通常のドキュメントフローから外す。 */
+.lang-corner{position:fixed;top:14px;right:14px;z-index:50;display:flex;flex-direction:column;
+  align-items:flex-end;gap:4px;max-width:220px}
+#lang-toggle{font-size:.82rem;padding:6px 14px;border-radius:20px;border:1px solid var(--accent);
+  background:var(--accent);color:#fff;cursor:pointer;white-space:nowrap;
+  box-shadow:0 2px 8px rgba(0,0,0,.15)}
 #lang-toggle:active{opacity:.85}
-.lang-note{font-size:.8rem;color:var(--muted)}
+.lang-note{font-size:.68rem;color:var(--muted);text-align:right;line-height:1.4}
+@media (max-width:640px){
+  .lang-corner{max-width:150px}
+  .lang-note{display:none}
+  header.page-head{padding-right:160px}
+}
 .event{border:1px solid var(--border);border-radius:8px;padding:16px 20px;margin:18px 0;
   page-break-inside:avoid}
 .event-head{display:flex;align-items:center;gap:10px;border-left:6px solid #999;padding-left:10px;
@@ -74,7 +87,7 @@ body.show-orig .lang-ja{display:none}
 .video-link-only{font-size:.85rem}
 
 @media print{
-  .toggle-bar{display:none}
+  .lang-corner{display:none}
   body{max-width:none;padding:0;font-size:10.5pt}
   .event{page-break-inside:avoid;border:1px solid #999}
   .timeline{page-break-after:always}
@@ -85,16 +98,19 @@ body.show-orig .lang-ja{display:none}
 </style>
 </head>
 <body class="show-ja">
-<header class="page-head">
-  <h1>ブリトニー・スピアーズ伝記映画（仮）｜ファクトチェック資料</h1>
-  <p class="meta-line">出来事 12件・原語判定：英語（自動判定・出典ドメインの多数決）
-   ・原語訳あり詳細 12/12件</p>
-</header>
-<div class="toggle-bar">
-  <button id="lang-toggle" data-label-ja="🇯🇵 日本語で見る" data-label-orig="🌐 原語（英語）で見る"
-    data-mode="ja">🌐 原語（英語）で見る</button>
-  <span class="lang-note">出典リンクは各出来事末尾からそのまま参照元へ飛べます</span>
+<div class="lang-corner">
+  <button id="lang-toggle" data-label-ja="🇯🇵 日本語で見る" data-label-orig="🌐 View in English"
+    data-mode="ja">🌐 View in English</button>
+  <span class="lang-note lang-ja">出典リンクは各出来事末尾からそのまま参照元へ飛べます</span>
+  <span class="lang-note lang-orig">Source links at the end of each event jump straight to the original.</span>
 </div>
+<header class="page-head">
+  <h1><span class="lang-ja">ブリトニー・スピアーズ伝記映画（仮）｜ファクトチェック資料</span><span class="lang-orig">Britney Spears Biopic (Working Title)｜Fact-Check Report</span></h1>
+  <p class="meta-line lang-ja">出来事 12件・原語判定：英語（自動判定・出典ドメインの多数決）
+   ・原語訳あり詳細 12/12件</p>
+  <p class="meta-line lang-orig">12 events・Primary language: English (auto-detected by source domain)
+   ・Original-language detail available: 12/12</p>
+</header>
 <main>
 
 <nav class="timeline" aria-label="年表">
