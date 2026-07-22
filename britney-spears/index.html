@@ -5,16 +5,17 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ブリトニー・スピアーズ伝記映画（仮）</title>
 <style>
-:root{--fg:#222;--bg:#fff;--accent:#8b5e3c;--muted:#666;--border:#ddd}
+:root{--fg:#222;--bg:#fff;--accent:#8b5e3c;--muted:#666;--border:#ddd;--media-bg:#eee}
 @media (prefers-color-scheme: dark){
-  :root{--fg:#e8e6e2;--bg:#1a1816;--accent:#c99a6a;--muted:#a9a49c;--border:#3a3632}
+  :root{--fg:#e8e6e2;--bg:#1a1816;--accent:#c99a6a;--muted:#a9a49c;--border:#3a3632;--media-bg:#2a2724}
 }
 *{box-sizing:border-box}
+html{font-size:19px}
 body{font-family:"Hiragino Mincho ProN","游明朝",serif;background:var(--bg);color:var(--fg);
-  max-width:900px;margin:0 auto;padding:24px;line-height:1.85}
+  max-width:1400px;margin:0 auto;padding:24px 48px;line-height:1.85}
 header.page-head{border-bottom:2px solid var(--accent);padding-bottom:16px;margin-bottom:24px}
-h1{font-size:1.5rem;margin:0 0 8px}
-.meta-line{color:var(--muted);font-size:.85rem}
+h1{font-size:1.7rem;margin:0 0 8px}
+.meta-line{color:var(--muted);font-size:.9rem}
 .toggle-bar{position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:10;
   border-bottom:1px solid var(--border);display:flex;gap:12px;align-items:center}
 #lang-toggle{font-size:1rem;padding:8px 18px;border-radius:20px;border:1px solid var(--accent);
@@ -57,10 +58,11 @@ body.show-orig .lang-ja{display:none}
 
 /* 画像・地図・動画埋め込み */
 .media-block{margin:14px 0}
-.media-images{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:10px}
-.media-figure{margin:0;font-size:.78rem;color:var(--muted)}
-.media-figure img{width:100%;height:150px;object-fit:cover;border-radius:6px;border:1px solid var(--border);display:block}
-.media-figure figcaption{margin-top:4px}
+.media-images{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:14px}
+.media-figure{margin:0;font-size:.82rem;color:var(--muted)}
+.media-figure img{width:100%;height:320px;object-fit:contain;object-position:center;
+  background:var(--media-bg);border-radius:6px;border:1px solid var(--border);display:block}
+.media-figure figcaption{margin-top:6px}
 .media-credit{display:block;font-size:.72rem;opacity:.8}
 .media-maps{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;margin-bottom:10px}
 .media-map iframe{width:100%;height:200px;border:1px solid var(--border);border-radius:6px}
@@ -101,97 +103,407 @@ body.show-orig .lang-ja{display:none}
 <li class="tl-item">
   <span class="tl-dot" style="border-color:#2e7d32"></span>
   <a class="tl-link" href="#E01">
-    <span class="tl-period">1981-1997</span>
-    <span class="tl-title">幼少期からミッキーマウスクラブ時代</span>
-    <span class="tl-summary">ブリトニー・スピアーズは1981年12月2日にミシシッピ州マコームで生まれ、ルイジアナ州ケントウッドで育った。8歳での「ミッキーマウスクラブ」オーディション不合格を経て、11歳前後で同番組に出演(1992年末〜1994年、ディズニー・チャンネル)、番組終了後はミシシッピに戻り、1997年頃にジャイヴ・レコードと契約するまでの空白期間を過ごした。</span>
+    <span class="tl-period">1981年12月2日</span>
+    <span class="tl-title">ミシシッピ州マコームで誕生</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E01">
+    <span class="tl-period">1984年頃</span>
+    <span class="tl-title">ルイジアナ州ケントウッドでダンスのレッスンを開始</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E01">
+    <span class="tl-period">1989年頃（8歳）</span>
+    <span class="tl-title">「ミッキーマウスクラブ」オーディション不合格</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E01">
+    <span class="tl-period">1992年12月／1993年11月15日（諸説）</span>
+    <span class="tl-title">「ミッキーマウスクラブ」再オーディション合格・出演開始</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E01">
+    <span class="tl-period">1994年</span>
+    <span class="tl-title">「ミッキーマウスクラブ」番組終了、マコームへ戻りパークレーン・アカデミー入学</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E01">
+    <span class="tl-period">1997年6月</span>
+    <span class="tl-title">ジャイヴ・レコードと契約</span>
   </a>
 </li>
 <li class="tl-item">
   <span class="tl-dot" style="border-color:#2e7d32"></span>
   <a class="tl-link" href="#E02">
-    <span class="tl-period">1998-2000</span>
-    <span class="tl-title">音楽デビューとスーパースターへの上昇</span>
-    <span class="tl-summary">1998年9月29日発売のデビューシングル「...Baby One More Time」とその後のアルバム、2000年の「Oops!... I Did It Again」により、ブリトニー・スピアーズは急速に世界的スーパースターとなった。</span>
+    <span class="tl-period">1998年9月29日</span>
+    <span class="tl-title">デビューシングル「...Baby One More Time」発売</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E02">
+    <span class="tl-period">1998年11月21日</span>
+    <span class="tl-title">同曲がBillboard Hot 100初登場17位</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E02">
+    <span class="tl-period">1999年1月12日</span>
+    <span class="tl-title">アルバム『...Baby One More Time』発売（Billboard 200初登場1位）</span>
   </a>
 </li>
 <li class="tl-item">
   <span class="tl-dot" style="border-color:#b8860b"></span>
   <a class="tl-link" href="#E03">
-    <span class="tl-period">1999-2002</span>
-    <span class="tl-title">ジャスティン・ティンバーレイクとの交際と破局</span>
-    <span class="tl-summary">元マウスケティア同士だった二人は1999年頃から交際が公になり約3年間続いたが、2002年に破局。破局そのものは確定事実だが、原因や経緯の細部(浮気疑惑・妊娠中絶・当てつけの真偽)は本人の証言や解釈が分かれる。</span>
+    <span class="tl-period">1999年頃（17歳）</span>
+    <span class="tl-title">ジャスティン・ティンバーレイクとの交際が公になる</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E02">
+    <span class="tl-period">1999年9月9日</span>
+    <span class="tl-title">MTV VMAで「...Baby One More Time」を初披露</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E02">
+    <span class="tl-period">2000年5月</span>
+    <span class="tl-title">アルバム『Oops!... I Did It Again』発売</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E02">
+    <span class="tl-period">2000年9月7日</span>
+    <span class="tl-title">MTV VMAでタキシード脱ぎ捨て演出の「Oops!」パフォーマンス</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#b8860b"></span>
+  <a class="tl-link" href="#E03">
+    <span class="tl-period">2000年（本人証言のみ・時期未確定）</span>
+    <span class="tl-title">ティンバーレイクとの間で妊娠・人工妊娠中絶（回顧録での告白）</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#b8860b"></span>
+  <a class="tl-link" href="#E03">
+    <span class="tl-period">2002年11月</span>
+    <span class="tl-title">ティンバーレイクと破局、同月「Cry Me a River」発表</span>
   </a>
 </li>
 <li class="tl-item">
   <span class="tl-dot" style="border-color:#2e7d32"></span>
   <a class="tl-link" href="#E04">
-    <span class="tl-period">2004年1月</span>
-    <span class="tl-title">ラスベガスでの電撃結婚(ジェイソン・アレクサンダーと)と55時間後の無効化</span>
-    <span class="tl-summary">2004年1月3日未明、ブリトニー・スピアーズは幼なじみのジェイソン・アレクサンダーとラスベガスの小さな教会で即興的に結婚し、わずか55時間後の1月5日に無効化(annulment)が法的に成立した。</span>
+    <span class="tl-period">2004年1月1日</span>
+    <span class="tl-title">ジェイソン・アレクサンダーをラスベガスへ呼ぶ</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E04">
+    <span class="tl-period">2004年1月3日</span>
+    <span class="tl-title">ラスベガスで電撃結婚（55時間婚の開始）</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E04">
+    <span class="tl-period">2004年1月5日</span>
+    <span class="tl-title">結婚の無効化（annulment）が法的に成立</span>
   </a>
 </li>
 <li class="tl-item">
   <span class="tl-dot" style="border-color:#2e7d32"></span>
   <a class="tl-link" href="#E05">
-    <span class="tl-period">2004年〜2006年</span>
-    <span class="tl-title">ケヴィン・フェダーラインとの結婚、リアリティ番組『Chaotic』、二人の息子の誕生</span>
-    <span class="tl-summary">ブリトニー・スピアーズは2004年にケヴィン・フェダーラインと出会って数か月で結婚し、リアリティ番組『Chaotic』が2005年に放送、2005年と2006年にそれぞれ長男・次男が誕生した。</span>
+    <span class="tl-period">2004年前半（時期未確定）</span>
+    <span class="tl-title">ケヴィン・フェダーラインと出会う</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E05">
+    <span class="tl-period">2004年7月</span>
+    <span class="tl-title">フェダーラインと婚約発表</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E05">
+    <span class="tl-period">2004年9月18日</span>
+    <span class="tl-title">フェダーラインと「擬似結婚式」</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E05">
+    <span class="tl-period">2004年10月6日</span>
+    <span class="tl-title">フェダーラインとの法的婚姻日（プレナップ成立日）</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E05">
+    <span class="tl-period">2005年5月〜6月</span>
+    <span class="tl-title">リアリティ番組『Britney and Kevin: Chaotic』放送</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E05">
+    <span class="tl-period">2005年9月14日</span>
+    <span class="tl-title">長男ショーン・プレストン誕生</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E05">
+    <span class="tl-period">2006年9月12日</span>
+    <span class="tl-title">次男ジェイデン・ジェームズ誕生</span>
   </a>
 </li>
 <li class="tl-item">
   <span class="tl-dot" style="border-color:#2e7d32"></span>
   <a class="tl-link" href="#E06">
-    <span class="tl-period">2006年11月</span>
-    <span class="tl-title">ケヴィン・フェダーラインとの離婚提訴と親権を巡る対立の始まり</span>
-    <span class="tl-summary">次男誕生からわずか2か月後の2006年11月7日、ブリトニー・スピアーズは離婚をロサンゼルス郡上級裁判所に申し立て単独親権を求め、翌8日にはフェダーライン側も対抗申し立てを行い、以後の長期化する親権対立の起点となった。</span>
+    <span class="tl-period">2006年11月7日</span>
+    <span class="tl-title">フェダーラインへ離婚提訴・単独親権を申立て</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E06">
+    <span class="tl-period">2006年11月8日</span>
+    <span class="tl-title">フェダーラインが対抗申立て（単独親権・訴訟費用負担を要求）</span>
   </a>
 </li>
 <li class="tl-item">
   <span class="tl-dot" style="border-color:#2e7d32"></span>
   <a class="tl-link" href="#E07">
-    <span class="tl-period">2007</span>
-    <span class="tl-title">2007年の精神的危機(丸刈り事件・傘振り回し事件・親権喪失・精神科病棟入院)</span>
-    <span class="tl-summary">2007年2月にブリトニー・スピアーズは自ら頭髪を丸刈りにし、翌週パパラッチの車を傘で攻撃した。同年10月に息子2人の主たる監護権を失い、2008年1月には2度の非自発的精神科入院(5150条項)を経験したが、2度目の入院理由は現在も確定していない。</span>
+    <span class="tl-period">2007年2月16日</span>
+    <span class="tl-title">自ら頭髪を丸刈りにする（丸刈り事件）</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E07">
+    <span class="tl-period">2007年2月下旬</span>
+    <span class="tl-title">パパラッチの車を傘で攻撃</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E07">
+    <span class="tl-period">2007年4月</span>
+    <span class="tl-title">マネージャーを解雇、リハビリ施設への出入りを繰り返す</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E06">
+    <span class="tl-period">2007年7月</span>
+    <span class="tl-title">フェダーラインと共同親権（50/50）で合意</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E07">
+    <span class="tl-period">2007年10月</span>
+    <span class="tl-title">親権争いで息子二人の主たる監護権がフェダーライン側へ</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E07">
+    <span class="tl-period">2008年1月3日</span>
+    <span class="tl-title">息子引き渡し拒否で立てこもり、5150条項により1度目の非自発入院</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E07">
+    <span class="tl-period">2008年1月31日</span>
+    <span class="tl-title">2度目の非自発入院（UCLA）</span>
   </a>
 </li>
 <li class="tl-item">
   <span class="tl-dot" style="border-color:#2e7d32"></span>
   <a class="tl-link" href="#E08">
-    <span class="tl-period">2008</span>
-    <span class="tl-title">2008年の成年後見人制度(コンサーバターシップ)開始の経緯</span>
-    <span class="tl-summary">2008年1月31日の2度目の精神科入院を受け、父ジェイミー・スピアーズが翌2月1日に緊急申立てを行い、同日中にロサンゼルス郡上位裁判所がジェイミーとアンドリュー・ワレット弁護士を共同後見人とする臨時後見を認めた。同年10月に恒久的後見へ移行した。</span>
+    <span class="tl-period">2008年2月1日</span>
+    <span class="tl-title">父ジェイミーが緊急申立て、臨時後見人制度が開始</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E08">
+    <span class="tl-period">2008年2月4日</span>
+    <span class="tl-title">本人選任弁護士の意向表明も認められず、裁判所選任代理人が継続</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E08">
+    <span class="tl-period">2008年10月28日</span>
+    <span class="tl-title">後見人制度が恒久的後見へ移行</span>
   </a>
 </li>
 <li class="tl-item">
   <span class="tl-dot" style="border-color:#b8860b"></span>
   <a class="tl-link" href="#E09">
-    <span class="tl-period">2008-2017</span>
-    <span class="tl-title">後見人制度下でのキャリア復帰(『Circus』『Femme Fatale』X Factor・Piece of Meレジデンシー)</span>
-    <span class="tl-summary">後見制度下の2008-2017年、スピアーズはアルバム2作・Xファクター審査員・4年間のラスベガス公演248回という客観的に活発な活動実績を残した。ただしこの活動が自由意思によるものか後見人らによる強制の結果だったのかは、本人の後年の証言と公的記録が食い違い、未確定である。</span>
+    <span class="tl-period">2008年12月2日</span>
+    <span class="tl-title">アルバム『Circus』発売（自身5作目の全米1位）</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#b8860b"></span>
+  <a class="tl-link" href="#E09">
+    <span class="tl-period">2011年3月25日</span>
+    <span class="tl-title">アルバム『Femme Fatale』発売</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#b8860b"></span>
+  <a class="tl-link" href="#E09">
+    <span class="tl-period">2012年5月</span>
+    <span class="tl-title">『Xファクター』US版審査員に就任</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#b8860b"></span>
+  <a class="tl-link" href="#E09">
+    <span class="tl-period">2013年12月27日</span>
+    <span class="tl-title">ラスベガス公演『Piece of Me』開始</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#b8860b"></span>
+  <a class="tl-link" href="#E09">
+    <span class="tl-period">2017年12月31日</span>
+    <span class="tl-title">『Piece of Me』公演終了（248公演・動員91.6万人）</span>
   </a>
 </li>
 <li class="tl-item">
   <span class="tl-dot" style="border-color:#2e7d32"></span>
   <a class="tl-link" href="#E10">
-    <span class="tl-period">2019-2021</span>
-    <span class="tl-title">#FreeBritney運動の高まりと二本のNYTドキュメンタリー</span>
-    <span class="tl-summary">2019年にファンの草の根運動として顕在化した#FreeBritney運動は、2021年公開のニューヨーク・タイムズ製作ドキュメンタリー2作(『Framing Britney Spears』『Controlling Britney Spears』)によって全米的な話題となり、本人の法廷証言・後見人制度終了と時期的に重なった。</span>
+    <span class="tl-period">2019年4月</span>
+    <span class="tl-title">ファンポッドキャストへの匿名音声メッセージが#FreeBritney運動のきっかけに</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E10">
+    <span class="tl-period">2019年4月22日</span>
+    <span class="tl-title">ウェストハリウッド市庁舎前で#FreeBritney抗議行動（約50人）</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E08">
+    <span class="tl-period">2019年</span>
+    <span class="tl-title">弁護士アンドリュー・ワレットが後見人を辞任</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E10">
+    <span class="tl-period">2021年2月5日</span>
+    <span class="tl-title">NYT製作ドキュメンタリー『Framing Britney Spears』公開</span>
   </a>
 </li>
 <li class="tl-item">
   <span class="tl-dot" style="border-color:#2e7d32"></span>
   <a class="tl-link" href="#E11">
-    <span class="tl-period">2021</span>
-    <span class="tl-title">2021年6月の法廷証言と同年11月の後見人制度終了</span>
-    <span class="tl-summary">ブリトニー・スピアーズは2021年6月23日、判事ブレンダ・ペニーの法廷で約24分間にわたり後見人制度下での虐待的な扱いを直接証言し、同年11月12日にペニー判事が後見人制度の完全終了を宣告した。</span>
+    <span class="tl-period">2021年6月23日</span>
+    <span class="tl-title">本人が約24分間の法廷証言（後見制度を「虐待的」と証言）</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E11">
+    <span class="tl-period">2021年7月14日</span>
+    <span class="tl-title">独立弁護士マシュー・ローゼンガートの選任が承認</span>
   </a>
 </li>
 <li class="tl-item">
   <span class="tl-dot" style="border-color:#2e7d32"></span>
   <a class="tl-link" href="#E12">
-    <span class="tl-period">2022-2025</span>
-    <span class="tl-title">後見人制度終了後:結婚・離婚・回想録出版と家族関係</span>
-    <span class="tl-summary">ブリトニー・スピアーズは2022年にサム・アスガリと結婚し2023年に離婚、2023年10月には衝撃的内容を含む回想録『The Woman in Me』を出版した。父との金銭訴訟は2024年に非公開和解に至ったが、家族との個人的関係の現状は報道が中心で確定情報は限定的である。</span>
+    <span class="tl-period">2021年9月頃</span>
+    <span class="tl-title">サム・アスガリと婚約</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E10">
+    <span class="tl-period">2021年9月24日</span>
+    <span class="tl-title">続編ドキュメンタリー『Controlling Britney Spears』公開</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E11">
+    <span class="tl-period">2021年9月29日</span>
+    <span class="tl-title">父ジェイミーが後見人の職務を停止（ジョン・ザベルが暫定就任）</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E11">
+    <span class="tl-period">2021年11月12日</span>
+    <span class="tl-title">後見制度が完全終了（約13年半で終結）</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E12">
+    <span class="tl-period">2022年6月9日</span>
+    <span class="tl-title">サム・アスガリと結婚</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E12">
+    <span class="tl-period">2023年8月16日</span>
+    <span class="tl-title">アスガリが離婚を申立て</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E12">
+    <span class="tl-period">2023年10月24日</span>
+    <span class="tl-title">回顧録『The Woman in Me』出版</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E12">
+    <span class="tl-period">2024年4月25日</span>
+    <span class="tl-title">父ジェイミーとの金銭訴訟が非公開和解</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E12">
+    <span class="tl-period">2024年5月</span>
+    <span class="tl-title">アスガリとの離婚が成立</span>
+  </a>
+</li>
+<li class="tl-item">
+  <span class="tl-dot" style="border-color:#2e7d32"></span>
+  <a class="tl-link" href="#E12">
+    <span class="tl-period">2024年後半〜2025年（報道ベース・確定情報は限定的）</span>
+    <span class="tl-title">息子二人との関係改善が報じられる（同居・SNS再会投稿等）</span>
   </a>
 </li></ul>
 </nav>
@@ -206,7 +518,7 @@ body.show-orig .lang-ja{display:none}
   </header>
   <p class="summary lang-ja">ブリトニー・スピアーズは1981年12月2日にミシシッピ州マコームで生まれ、ルイジアナ州ケントウッドで育った。8歳での「ミッキーマウスクラブ」オーディション不合格を経て、11歳前後で同番組に出演(1992年末〜1994年、ディズニー・チャンネル)、番組終了後はミシシッピに戻り、1997年頃にジャイヴ・レコードと契約するまでの空白期間を過ごした。</p>
   <p class="summary lang-orig">Britney Spears was born December 2, 1981 in McComb, Mississippi, raised in Kentwood, Louisiana; rejected by the revived Mickey Mouse Club at age 8, she was cast around age 11 (1992/1993) and signed with Jive Records in 1997 after the show ended.</p>
-  <div class="media-block"><div class="media-maps"><figure class="media-figure media-map"><iframe src="https://www.google.com/maps?q=McComb,+Mississippi&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><figcaption>出生地：ミシシッピ州マコーム</figcaption></figure><figure class="media-figure media-map"><iframe src="https://www.google.com/maps?q=Kentwood,+Louisiana&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><figcaption>育った町：ルイジアナ州ケントウッド</figcaption></figure></div><div class="media-videos"><h4>参考動画</h4><ul class="video-list"><li class="video-item video-link-only"><a href="https://www.youtube.com/watch?v=Rlor67Ivn2E" target="_blank" rel="noopener">ミッキーマウスクラブ時代の映像</a> <span class=media-credit>（starbritspears（非公式・ファン投稿））</span></li></ul></div></div>
+  <div class="media-block"><div class="media-maps"><figure class="media-figure media-map"><iframe src="https://www.google.com/maps?q=McComb,+Mississippi&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><figcaption>出生地：ミシシッピ州マコーム</figcaption></figure><figure class="media-figure media-map"><iframe src="https://www.google.com/maps?q=Kentwood,+Louisiana&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><figcaption>育った町：ルイジアナ州ケントウッド</figcaption></figure></div><div class="media-videos"><h4>参考動画</h4><ul class="video-list"><li class="video-item"><div class="video-embed"><iframe src="https://www.youtube.com/embed/Rlor67Ivn2E" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div><p class="video-caption">ミッキーマウスクラブ時代の映像 <span class=media-credit>（starbritspears（非公式・ファン投稿））</span><br><a href="https://www.youtube.com/watch?v=Rlor67Ivn2E" target="_blank" rel="noopener">https://www.youtube.com/watch?v=Rlor67Ivn2E</a></p></li></ul></div></div>
   <div class="detail lang-ja"><p>確定している事実:ブリトニー・ジーン・スピアーズは1981年12月2日、ミシシッピ州マコームで、ジェームズ・パーネル(ジェイミー)・スピアーズとリン・アイリーン(旧姓ブリッジズ)・スピアーズの間に生まれた。3人きょうだいの真ん中で、兄ブライアン、妹ジェイミー・リンがいる。生まれてすぐ一家はルイジアナ州ケントウッドに移り、ブリトニーはそこで育った(この点、通俗的な紹介記事や日本語圏の要約記事の一部では『ケントウッド生まれ』と単純化される例があり、正確には『マコーム生まれ、ケントウッド育ち』が実態である)。幼少期は1984年頃からケントウッドでダンスのレッスンに通い、地元の発表会で単独出演を任されるなど早くから芸能活動の素地があった。8歳の時、ディズニー・チャンネルの新生「ミッキーマウスクラブ」のオーディションを受けたが、キャスティングディレクターのマット・カセラから『幼すぎる』という理由で不合格となった。この不合格がきっかけで、両親は彼女をニューヨークのプロフェッショナル・パフォーミング・アーツ・スクールに通わせた。11歳前後で「ミッキーマウスクラブ」に再オーディションし合格。出演開始時期は資料間で1992年12月説と1993年11月15日(ジャスティン・ティンバーレイク、クリスティーナ・アギレラと同時デビュー)説が併存する。番組終了(1994年)後はミシシッピ州マコームに戻りパークレーン・アカデミーに入学。1997年6月、ラリー・ルドルフの後押しでジャイヴ・レコードと契約。</p></div>
   <div class="detail lang-orig"><p>Britney Jean Spears was born December 2, 1981, in McComb, Mississippi, to James Parnell (Jamie) Spears and Lynne Irene (née Bridges) Spears, and grew up in Kentwood, Louisiana. At age eight she auditioned for the revived Disney Channel &#x27;The New Mickey Mouse Club&#x27; but was rejected by casting director Matt Casella for being &#x27;too young,&#x27; leading her family to enroll her at NYC&#x27;s Professional Performing Arts School. She re-auditioned around age 11 and was cast; sources disagree whether her tenure began December 1992 or November 15, 1993 (alongside Justin Timberlake and Christina Aguilera). After the show ended production in 1994 she returned to McComb, enrolling at Parklane Academy. In June 1997, aided by family friend/entertainment lawyer Larry Rudolph, she signed with Jive Records.</p></div>
   
@@ -226,7 +538,7 @@ body.show-orig .lang-ja{display:none}
   </header>
   <p class="summary lang-ja">1998年9月29日発売のデビューシングル「...Baby One More Time」とその後のアルバム、2000年の「Oops!... I Did It Again」により、ブリトニー・スピアーズは急速に世界的スーパースターとなった。</p>
   <p class="summary lang-orig">The September 1998 single &quot;...Baby One More Time&quot; and the 2000 album &quot;Oops!... I Did It Again&quot; propelled Britney Spears to global superstardom.</p>
-  <div class="media-block"><div class="media-images"><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Britney_Spears_1999.jpg" alt="1999年、コンサートでのブリトニー・スピアーズ（デビューアルバム期）" loading="lazy"><figcaption>1999年、コンサートでのブリトニー・スピアーズ（デビューアルバム期）<span class=media-credit>Greg（Flickr経由） / CC BY 2.0</span></figcaption></figure><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Britney_Spears_-_Meet_%26_Greet_08-05-2000_-_10.jpg" alt="2000年8月5日、ファンとのミート＆グリートでのブリトニー・スピアーズ" loading="lazy"><figcaption>2000年8月5日、ファンとのミート＆グリートでのブリトニー・スピアーズ<span class=media-credit>David Vo / CC BY 2.0</span></figcaption></figure></div><div class="media-videos"><h4>参考動画</h4><ul class="video-list"><li class="video-item"><div class="video-embed"><iframe src="https://www.youtube.com/embed/nT2NsKhKsYs" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div><p class="video-caption">1999年VMA「...Baby One More Time」デビューパフォーマンス <span class=media-credit>（MTV（公式））</span><br><a href="https://www.youtube.com/watch?v=nT2NsKhKsYs" target="_blank" rel="noopener">https://www.youtube.com/watch?v=nT2NsKhKsYs</a></p></li><li class="video-item video-link-only"><a href="https://www.youtube.com/watch?v=LaKOa57wo1w" target="_blank" rel="noopener">「...Baby One More Time」ミュージックビデオ（転載）</a> <span class=media-credit>（generationhitmachine（非公式・タイトルに「Official」とあるが実チャンネルは非公式と確認））</span></li></ul></div></div>
+  <div class="media-block"><div class="media-images"><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Britney_Spears_1999.jpg" alt="1999年、コンサートでのブリトニー・スピアーズ（デビューアルバム期）" loading="lazy"><figcaption>1999年、コンサートでのブリトニー・スピアーズ（デビューアルバム期）<span class=media-credit>Greg（Flickr経由） / CC BY 2.0</span></figcaption></figure><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Britney_Spears_-_Meet_%26_Greet_08-05-2000_-_10.jpg" alt="2000年8月5日、ファンとのミート＆グリートでのブリトニー・スピアーズ" loading="lazy"><figcaption>2000年8月5日、ファンとのミート＆グリートでのブリトニー・スピアーズ<span class=media-credit>David Vo / CC BY 2.0</span></figcaption></figure></div><div class="media-videos"><h4>参考動画</h4><ul class="video-list"><li class="video-item"><div class="video-embed"><iframe src="https://www.youtube.com/embed/nT2NsKhKsYs" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div><p class="video-caption">1999年VMA「...Baby One More Time」デビューパフォーマンス <span class=media-credit>（MTV（公式））</span><br><a href="https://www.youtube.com/watch?v=nT2NsKhKsYs" target="_blank" rel="noopener">https://www.youtube.com/watch?v=nT2NsKhKsYs</a></p></li><li class="video-item"><div class="video-embed"><iframe src="https://www.youtube.com/embed/LaKOa57wo1w" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div><p class="video-caption">「...Baby One More Time」ミュージックビデオ（転載） <span class=media-credit>（generationhitmachine（非公式・タイトルに「Official」とあるが実チャンネルは非公式と確認））</span><br><a href="https://www.youtube.com/watch?v=LaKOa57wo1w" target="_blank" rel="noopener">https://www.youtube.com/watch?v=LaKOa57wo1w</a></p></li></ul></div></div>
   <div class="detail lang-ja"><p>シングル「...Baby One More Time」は1998年9月29日発売(Jive Records)。Billboard Hot 100初登場17位(1998年11月21日)、後に1位を2週連続獲得。RIAA公式データベース確認で現在5×プラチナ(認定日2023年10月24日、現行のストリーミング込み方式)。アルバム『...Baby One More Time』は1999年1月12日発売、Billboard 200初登場1位、初週約121,000枚。RIAA確認で14×プラチナ(認定日2004年7月19日)。続く『Oops!... I Did It Again』は2000年5月(米国5/16・日本5/3説あり)発売、初週1,319,193枚で当時の女性アーティスト最高記録(2015年Adele『25』まで15年保持)。RIAA確認でダイヤモンド(10×プラチナ、認定日2005年1月24日)。1999年VMA(9/9・メトロポリタン歌劇場)で&#x27;NSYNCとの合同セグメントでデビュー曲初披露。2000年VMA(9/7・ラジオシティ)でタキシードを脱ぎ捨てる演出で「Oops!」を披露。</p></div>
   <div class="detail lang-orig"><p>&quot;...Baby One More Time&quot; (single) released September 29, 1998 on Jive Records; debuted at #17 on Billboard Hot 100, later reached #1. RIAA confirms 5x Platinum (certified October 24, 2023, reflecting modern streaming-inclusive methodology). The album followed January 12, 1999, debuting #1 on Billboard 200 with ~121,000 first-week units; RIAA confirms 14x Platinum (certified July 19, 2004). Follow-up &#x27;Oops!... I Did It Again&#x27; (May 2000) sold 1,319,193 first-week copies, a female-artist record that stood until Adele&#x27;s &#x27;25&#x27; in 2015; RIAA confirms Diamond/10x Platinum (certified January 24, 2005). At the 1999 VMAs she debuted her single in a joint segment with &#x27;NSYNC; at the 2000 VMAs she performed a tuxedo-reveal routine for &#x27;Oops!&#x27;.</p></div>
   
@@ -246,7 +558,7 @@ body.show-orig .lang-ja{display:none}
   </header>
   <p class="summary lang-ja">元マウスケティア同士だった二人は1999年頃から交際が公になり約3年間続いたが、2002年に破局。破局そのものは確定事実だが、原因や経緯の細部(浮気疑惑・妊娠中絶・当てつけの真偽)は本人の証言や解釈が分かれる。</p>
   <p class="summary lang-orig">The two former Mouseketeers&#x27; relationship became public around 1999 and lasted about three years before ending in 2002. The breakup itself is confirmed, but details of its cause (infidelity, an abortion, a text-message breakup) rest on Spears&#x27;s own later testimony and are not independently corroborated.</p>
-  <div class="media-block"><div class="media-videos"><h4>参考動画</h4><ul class="video-list"><li class="video-item video-link-only"><a href="https://www.youtube.com/watch?v=PmtysW6WMRY" target="_blank" rel="noopener">ジャスティン・ティンバーレイク「Cry Me a River」ミュージックビデオ（転載）</a> <span class=media-credit>（Bad Boy Edd（非公式・タイトルに「Official」とあるが実チャンネルは非公式と確認））</span></li></ul></div></div>
+  <div class="media-block"><div class="media-videos"><h4>参考動画</h4><ul class="video-list"><li class="video-item"><div class="video-embed"><iframe src="https://www.youtube.com/embed/PmtysW6WMRY" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div><p class="video-caption">ジャスティン・ティンバーレイク「Cry Me a River」ミュージックビデオ（転載） <span class=media-credit>（Bad Boy Edd（非公式・タイトルに「Official」とあるが実チャンネルは非公式と確認））</span><br><a href="https://www.youtube.com/watch?v=PmtysW6WMRY" target="_blank" rel="noopener">https://www.youtube.com/watch?v=PmtysW6WMRY</a></p></li></ul></div></div>
   <div class="detail lang-ja"><p>元マウスケティア同士だったブリトニー・スピアーズとジャスティン・ティンバーレイクの交際は1999年頃(ブリトニー17歳)から公になり、以後「理想のカップル」としてメディアに大きく取り上げられながら約3年間続いたが、2002年に破局した。破局そのものが事実であることは複数の同時代報道で一致しており確度は高い。ただし、破局の具体的な経緯——ティンバーレイク側が携帯電話のショートメッセージ(SMS)で一方的に別れを告げてきたという説明——は、2023年刊行の回顧録『The Woman in Me』における本人の一人称証言のみが出典であり、ハリウッド・リポーター誌の報道自身も「ティンバーレイク側からの反応・裏付けは無い」と明記している。破局直後の2002年11月、ティンバーレイクが発表した楽曲「Cry Me a River」のミュージックビデオはブリトニーに酷似した女性が浮気する演出を含んでおり、多くのメディア・ファンから「彼女への当てつけ」と広く解釈されたが、これは浮気の客観的な証拠ではなく、あくまでメディア・世間の解釈にとどまる。回顧録ではさらに、2000年(共に19歳の頃)の妊娠と、ティンバーレイクの反対によって人工妊娠中絶を選んだという経緯も告白しているが、これも本人単独の証言であり、独立した第三者による裏付けは今回の調査では見つからなかった。2024年1月から2月にかけては、回顧録刊行を受けてブリトニーがSNS上に謝罪めいた投稿を行い、ティンバーレイクが「誰にも謝るつもりはない」と応じたことが大きく報じられ、旧交際にまつわる対立が改めて注目を集めた。</p></div>
   <div class="detail lang-orig"><p>The relationship became public around 1999 and ended in 2002; the breakup itself is well-corroborated. The claim it ended via text message rests solely on Spears&#x27;s 2023 memoir account. Timberlake&#x27;s November 2002 song &#x27;Cry Me a River&#x27; was widely interpreted as referencing infidelity by Spears, but this is media interpretation, not proven fact. The memoir&#x27;s abortion account (2000, both age 19, Timberlake reportedly opposed continuing pregnancy) is a first-person disclosure without independent corroboration. A January-February 2024 public exchange (apology post, Timberlake&#x27;s &#x27;apologize to absolutely nobody&#x27; remark) followed the memoir&#x27;s release.</p></div>
   <div class=hypotheses><h4>個別の仮説</h4><div class=hypothesis><p class=hyp-text>破局が『SMS（テキストメッセージ）での一方的な別れ』だったという経緯は、2023年回顧録での本人の一人称証言のみが出典で、第三者による裏付けはない</p><p class=hyp-verdict>判定：unresolved</p><p>ハリウッド・リポーター誌の報道は、回顧録『The Woman in Me』における本人の一人称証言を報じたものであり、記事中でティンバーレイク側からの反応・裏付けは無いと明記している</p><p class=hyp-link><span class="tier tier-primary">一次</span><a href="https://www.hollywoodreporter.com/news/general-news/britney-spears-justin-timberlake-abortion-1235620535/" target="_blank" rel="noopener">https://www.hollywoodreporter.com/news/general-news/britney-spears-justin-timberlake-abortion-1235620535/</a></p></div><div class=hypothesis><p class=hyp-text>破局後の楽曲『Cry Me a River』（2002年11月発表）がブリトニーの浮気を示唆しているという解釈は、メディアによる解釈であり、浮気の客観的証拠ではない</p><p class=hyp-verdict>判定：unresolved</p><p>2024年1-2月のSNS応酬（ブリトニーの謝罪投稿とティンバーレイクの『誰にも謝らない』発言）を報じた記事群でも、楽曲が浮気を示唆しているという理解は広く共有された『解釈』として扱われており、当時の一次資料による裏付けは提示されていない</p><p class=hyp-link><span class="tier tier-primary">一次</span><a href="https://www.nbcnews.com/pop-culture/pop-culture-news/justin-timberlake-says-sorry-absolutely-nobody-days-britney-spears-apo-rcna136776" target="_blank" rel="noopener">https://www.nbcnews.com/pop-culture/pop-culture-news/justin-timberlake-says-sorry-absolutely-nobody-days-britney-spears-apo-rcna136776</a></p></div><div class=hypothesis><p class=hyp-text>2000年の妊娠・人工妊娠中絶（ティンバーレイクの反対による）という経緯は、回顧録における本人の一方的な証言であり、独立した第三者による裏付けはない</p><p class=hyp-verdict>判定：unresolved</p><p>ABCニュースの報道は『回顧録での主張（claims）』という枠組みで一貫しており、ティンバーレイク本人や第三者による独立した裏付けは報道時点で存在しないと確認できる</p><p class=hyp-link><span class="tier tier-primary">一次</span><a href="https://abcnews.com/GMA/Culture/britney-spears-claims-memoir-abortion-dating-justin-timberlake/story?id=104044807" target="_blank" rel="noopener">https://abcnews.com/GMA/Culture/britney-spears-claims-memoir-abortion-dating-justin-timberlake/story?id=104044807</a></p></div></div>
@@ -286,7 +598,7 @@ body.show-orig .lang-ja{display:none}
   </header>
   <p class="summary lang-ja">ブリトニー・スピアーズは2004年にケヴィン・フェダーラインと出会って数か月で結婚し、リアリティ番組『Chaotic』が2005年に放送、2005年と2006年にそれぞれ長男・次男が誕生した。</p>
   <p class="summary lang-orig">Britney Spears met and married Kevin Federline within months in 2004, starred in the reality show &quot;Chaotic&quot; in 2005, and gave birth to two sons in 2005 and 2006.</p>
-  <div class="media-block"><div class="media-images"><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Kevin_Federline.jpg" alt="2006年11月、ケヴィン・フェダーライン（本人単独の写真。ブリトニーとの2ショットはCommonsに無し）" loading="lazy"><figcaption>2006年11月、ケヴィン・フェダーライン（本人単独の写真。ブリトニーとの2ショットはCommonsに無し）<span class=media-credit>boymeetswurld（Flickr） / CC BY 2.0</span></figcaption></figure></div><div class="media-videos"><h4>参考動画</h4><ul class="video-list"><li class="video-item video-link-only"><a href="https://www.youtube.com/watch?v=xdoXoxSXjwE" target="_blank" rel="noopener">『Britney and Kevin: Chaotic』第1話</a> <span class=media-credit>（Just4you（非公式・ファン投稿））</span></li></ul></div></div>
+  <div class="media-block"><div class="media-images"><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Kevin_Federline.jpg" alt="2006年11月、ケヴィン・フェダーライン（本人単独の写真。ブリトニーとの2ショットはCommonsに無し）" loading="lazy"><figcaption>2006年11月、ケヴィン・フェダーライン（本人単独の写真。ブリトニーとの2ショットはCommonsに無し）<span class=media-credit>boymeetswurld（Flickr） / CC BY 2.0</span></figcaption></figure></div><div class="media-videos"><h4>参考動画</h4><ul class="video-list"><li class="video-item"><div class="video-embed"><iframe src="https://www.youtube.com/embed/xdoXoxSXjwE" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div><p class="video-caption">『Britney and Kevin: Chaotic』第1話 <span class=media-credit>（Just4you（非公式・ファン投稿））</span><br><a href="https://www.youtube.com/watch?v=xdoXoxSXjwE" target="_blank" rel="noopener">https://www.youtube.com/watch?v=xdoXoxSXjwE</a></p></li></ul></div></div>
   <div class="detail lang-ja"><p>ブリトニー・スピアーズとケヴィン・フェダーラインは2004年、ハリウッドのクラブで出会った。交際が始まった正確な時期については、フェダーラインの元交際相手であったシャー・ジャクソン側の認識との間に食い違いがあり(ジャクソン側は自身の妊娠中に交際が始まっていたと主張)、この点は現時点で未確定である。二人は出会いからわずか数か月というスピードで関係を進め、2004年7月に婚約を発表、9月18日には非公式な「擬似結婚式」を行った上で、婚前契約(プレナップ)が正式に成立した10月6日をもって法的な婚姻日としている(この日付は後の離婚申立書にも記載されている)。結婚生活の様子を追ったリアリティ番組『Britney and Kevin: Chaotic』は2005年5月から6月にかけて放送されたが、批評家からは酷評され、本人も2013年のインタビューで「自分がやった中で最悪の仕事だったと思う」と振り返っている。夫婦の間には、2005年9月14日に長男ショーン・プレストン、2006年9月12日に次男ジェイデン・ジェームズが誕生した。</p><p>この結婚は、出会いから婚約・挙式に至るまでの展開の速さそのものがメディアの注目を集める要因となった。ケヴィン・フェダーラインは元々別のダンサー(シャー・ジャクソン)との間に既に2人の子をもうけていた状態での交際・結婚だったため、当時の報道では家庭の複雑さも合わせて話題にされている。この結婚生活は、後述するE06の離婚申立て(2006年11月)まで、実質2年強しか続かなかった。</p></div>
   <div class="detail lang-orig"><p>Spears and Federline met in 2004, engaged in July 2004; a September 18 &#x27;faux wedding&#x27; preceded the legally valid October 6, 2004 marriage date (once the prenup was finalized). The circumstances around when the relationship began are disputed with Federline&#x27;s ex Shar Jackson. Reality series &#x27;Britney and Kevin: Chaotic&#x27; aired May-June 2005 to critical panning; Spears later called it &#x27;probably the worst thing I&#x27;ve done.&#x27; Sons Sean Preston (b. September 14, 2005) and Jayden James (b. September 12, 2006) followed.</p></div>
   
@@ -366,7 +678,7 @@ body.show-orig .lang-ja{display:none}
   </header>
   <p class="summary lang-ja">後見制度下の2008-2017年、スピアーズはアルバム2作・Xファクター審査員・4年間のラスベガス公演248回という客観的に活発な活動実績を残した。ただしこの活動が自由意思によるものか後見人らによる強制の結果だったのかは、本人の後年の証言と公的記録が食い違い、未確定である。</p>
   <p class="summary lang-orig">Under the conservatorship (2008-2017), Spears compiled an objectively active career (two albums, X Factor judge, 248 Las Vegas residency shows), but whether this activity was voluntary or coerced by her conservators is disputed between her later testimony and the public record.</p>
-  <div class="media-block"><div class="media-images"><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Britney_Spears_-_Circus_Tour_2009.jpg" alt="2009年6月、ロンドンO2アリーナでの「サーカス」ツアー公演" loading="lazy"><figcaption>2009年6月、ロンドンO2アリーナでの「サーカス」ツアー公演<span class=media-credit>Sam Lavi / CC BY 2.0</span></figcaption></figure><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/-i---i-_%285858420723%29.jpg" alt="2011年6月、「フェム・ファタール」ツアーの公演風景" loading="lazy"><figcaption>2011年6月、「フェム・ファタール」ツアーの公演風景<span class=media-credit>Shelly Sheridan / CC BY 2.0</span></figcaption></figure><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Britney_Spears_X-Factor_2012.jpg" alt="2012年6月、『Xファクター』US版審査員としてのブリトニー・スピアーズ" loading="lazy"><figcaption>2012年6月、『Xファクター』US版審査員としてのブリトニー・スピアーズ<span class=media-credit>rocor（Flickr） / CC BY 2.0</span></figcaption></figure><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Britney_Spears_%27Piece_of_Me%27_-_Las_Vegas_IMG_6087_%2827514318005%29.jpg" alt="2016年2月、ラスベガス プラネットハリウッドでの「ピース・オブ・ミー」公演" loading="lazy"><figcaption>2016年2月、ラスベガス プラネットハリウッドでの「ピース・オブ・ミー」公演<span class=media-credit>Kristopher Harris / CC BY 2.0</span></figcaption></figure></div><div class="media-videos"><h4>参考動画</h4><ul class="video-list"><li class="video-item video-link-only"><a href="https://www.youtube.com/watch?v=paVljWuQvaY" target="_blank" rel="noopener">『Xファクター』US版審査員時代のクリップ</a> <span class=media-credit>（starbritspears（非公式・ファン投稿））</span></li></ul></div></div>
+  <div class="media-block"><div class="media-images"><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Britney_Spears_-_Circus_Tour_2009.jpg" alt="2009年6月、ロンドンO2アリーナでの「サーカス」ツアー公演" loading="lazy"><figcaption>2009年6月、ロンドンO2アリーナでの「サーカス」ツアー公演<span class=media-credit>Sam Lavi / CC BY 2.0</span></figcaption></figure><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/-i---i-_%285858420723%29.jpg" alt="2011年6月、「フェム・ファタール」ツアーの公演風景" loading="lazy"><figcaption>2011年6月、「フェム・ファタール」ツアーの公演風景<span class=media-credit>Shelly Sheridan / CC BY 2.0</span></figcaption></figure><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Britney_Spears_X-Factor_2012.jpg" alt="2012年6月、『Xファクター』US版審査員としてのブリトニー・スピアーズ" loading="lazy"><figcaption>2012年6月、『Xファクター』US版審査員としてのブリトニー・スピアーズ<span class=media-credit>rocor（Flickr） / CC BY 2.0</span></figcaption></figure><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Britney_Spears_%27Piece_of_Me%27_-_Las_Vegas_IMG_6087_%2827514318005%29.jpg" alt="2016年2月、ラスベガス プラネットハリウッドでの「ピース・オブ・ミー」公演" loading="lazy"><figcaption>2016年2月、ラスベガス プラネットハリウッドでの「ピース・オブ・ミー」公演<span class=media-credit>Kristopher Harris / CC BY 2.0</span></figcaption></figure></div><div class="media-videos"><h4>参考動画</h4><ul class="video-list"><li class="video-item"><div class="video-embed"><iframe src="https://www.youtube.com/embed/paVljWuQvaY" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div><p class="video-caption">『Xファクター』US版審査員時代のクリップ <span class=media-credit>（starbritspears（非公式・ファン投稿））</span><br><a href="https://www.youtube.com/watch?v=paVljWuQvaY" target="_blank" rel="noopener">https://www.youtube.com/watch?v=paVljWuQvaY</a></p></li></ul></div></div>
   <div class="detail lang-ja"><p>2008年から2017年にかけて後見制度の下にありながらも、ブリトニー・スピアーズは客観的には非常に活発なキャリアを重ねている。2008年12月2日に発売した『Circus』は自身5作目となる全米ビルボード200チャート1位を獲得し、2011年3月25日には『Femme Fatale』を発売、2012年5月にはオーディション番組『Xファクター』の審査員に就任した(契約総額は約1,500万ドルとされ、後見人および裁判所の承認を経て成立している)。さらに2013年12月27日から2017年12月31日にかけては、ラスベガスでの専属公演『Piece of Me』を248回にわたり開催し、動員91万6千人、興行収入1億3,770万ドルという記録を残した。これらの活動実績そのものは、複数の業界データ・報道で裏付けられた客観的な確定事実である。一方で本人は、2021年6月の法廷証言において、この時期の後見制度を「虐待的だった」と述べ、「働かなければ子供や恋人に会わせてもらえないと言われた」と証言したほか、回顧録等では外出の制限・公演セットリストを自分で変更できなかったこと・意に反してリチウムを服用させられていたことなども主張している。ただし、こうした『強制されていた』とする証言の内容自体については、独立した第三者による裏付け資料が乏しく、客観的に確認できる活動実績とは区別して、係争的・未確定な部分として扱う必要がある。</p></div>
   <div class="detail lang-orig"><p>Despite the conservatorship, Spears released &#x27;Circus&#x27; (Dec 2, 2008, her fifth #1 album), &#x27;Femme Fatale&#x27; (March 25, 2011), served as X Factor judge (2012, ~$15M deal requiring conservator/court approval), and performed 248 shows in her &#x27;Piece of Me&#x27; Las Vegas residency (Dec 2013-Dec 2017, 916,184 tickets, $137.7M gross) — all well-documented facts. However, in her June 2021 court testimony and later memoir, she described the conservatorship as abusive, alleging she was told she couldn&#x27;t see her children/partner unless she worked, was restricted from going out, couldn&#x27;t change setlists, and was forced onto Lithium. These coercion claims lack independent third-party corroboration and should be treated as disputed rather than established.</p></div>
   <div class=hypotheses><h4>個別の仮説</h4><div class=hypothesis><p class=hyp-text>『Circus』『Femme Fatale』の発売・Xファクター審査員就任・『Piece of Me』248公演（動員91.6万人・興行収入1.377億ドル）という活動実績そのものは、客観的な記録として確認できる</p><p class=hyp-verdict>判定：supported</p><p>公演回数・動員数・興行収入は複数の業界データ集計に基づく客観的な記録として一致しており、活動実績そのものの存在に争いはない</p><p class=hyp-link><span class="tier tier-secondary">二次</span><a href="https://en.wikipedia.org/wiki/Britney:_Piece_of_Me" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Britney:_Piece_of_Me</a></p></div><div class=hypothesis><p class=hyp-text>本人がこの期間の活動を『働かなければ子供・恋人に会わせないと言われた』『外出制限・セットリスト変更不可・リチウム強制投与があった』と後見制度下での強制と証言した内容は、2021年6月の法廷証言・回顧録における本人の一人称証言であり、独立した第三者裏付けは限定的</p><p class=hyp-verdict>判定：unresolved</p><p>NPR公開の法廷証言全文は本人の直接証言としての信頼性は高い（同時通話での宣誓証言・複数媒体で同一文言を確認）が、証言内容そのもの（強制の実態）を独立に裏付ける第三者資料・記録は今回の調査では見つからなかった</p><p class=hyp-link><span class="tier tier-primary">一次</span><a href="https://www.npr.org/2021/06/24/1009858617/britney-spears-transcript-court-hearing-conservatorship" target="_blank" rel="noopener">https://www.npr.org/2021/06/24/1009858617/britney-spears-transcript-court-hearing-conservatorship</a></p></div></div>
@@ -386,7 +698,7 @@ body.show-orig .lang-ja{display:none}
   </header>
   <p class="summary lang-ja">2019年にファンの草の根運動として顕在化した#FreeBritney運動は、2021年公開のニューヨーク・タイムズ製作ドキュメンタリー2作(『Framing Britney Spears』『Controlling Britney Spears』)によって全米的な話題となり、本人の法廷証言・後見人制度終了と時期的に重なった。</p>
   <p class="summary lang-orig">The #FreeBritney movement, which crystallized among fans in 2019, became a mainstream story through two 2021 New York Times documentaries, coinciding with her court testimony and the conservatorship&#x27;s termination.</p>
-  <div class="media-block"><div class="media-images"><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Free_Britney_Movement_in_Washington_1.jpg" alt="2021年7月14日、ワシントンD.C.リンカーン記念堂前での#FreeBritney支持者の集会" loading="lazy"><figcaption>2021年7月14日、ワシントンD.C.リンカーン記念堂前での#FreeBritney支持者の集会<span class=media-credit>Mike Maguire / CC BY 2.0</span></figcaption></figure><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Collage_feministe_-_Paris_-_29_juin_2021_-_free_Britney.jpg" alt="2021年6月29日、パリでの#FreeBritneyをテーマにしたストリートアート" loading="lazy"><figcaption>2021年6月29日、パリでの#FreeBritneyをテーマにしたストリートアート<span class=media-credit>Silanoc / CC BY-SA 4.0</span></figcaption></figure><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/CSD_Berlin_2021_-_Lucas_Werkmeister_-_40_-_Free_Britney.jpg" alt="2021年7月24日、ベルリンのプライドパレードでの#FreeBritneyのプラカード" loading="lazy"><figcaption>2021年7月24日、ベルリンのプライドパレードでの#FreeBritneyのプラカード<span class=media-credit>Lucas Werkmeister / CC BY 4.0</span></figcaption></figure></div><div class="media-videos"><h4>参考動画</h4><ul class="video-list"><li class="video-item video-link-only"><a href="https://www.youtube.com/watch?v=7SJMg00HoR8" target="_blank" rel="noopener">『Framing Britney Spears』トレーラー（転載）</a> <span class=media-credit>（Britney Online（非公式・タイトルに「Official Trailer」とあるが実チャンネルは非公式と確認））</span></li><li class="video-item"><div class="video-embed"><iframe src="https://www.youtube.com/embed/Z920uNiv1Eg" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div><p class="video-caption">『Controlling Britney Spears』ハイライト <span class=media-credit>（FX Networks（公式））</span><br><a href="https://www.youtube.com/watch?v=Z920uNiv1Eg" target="_blank" rel="noopener">https://www.youtube.com/watch?v=Z920uNiv1Eg</a></p></li></ul></div></div>
+  <div class="media-block"><div class="media-images"><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Free_Britney_Movement_in_Washington_1.jpg" alt="2021年7月14日、ワシントンD.C.リンカーン記念堂前での#FreeBritney支持者の集会" loading="lazy"><figcaption>2021年7月14日、ワシントンD.C.リンカーン記念堂前での#FreeBritney支持者の集会<span class=media-credit>Mike Maguire / CC BY 2.0</span></figcaption></figure><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Collage_feministe_-_Paris_-_29_juin_2021_-_free_Britney.jpg" alt="2021年6月29日、パリでの#FreeBritneyをテーマにしたストリートアート" loading="lazy"><figcaption>2021年6月29日、パリでの#FreeBritneyをテーマにしたストリートアート<span class=media-credit>Silanoc / CC BY-SA 4.0</span></figcaption></figure><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/CSD_Berlin_2021_-_Lucas_Werkmeister_-_40_-_Free_Britney.jpg" alt="2021年7月24日、ベルリンのプライドパレードでの#FreeBritneyのプラカード" loading="lazy"><figcaption>2021年7月24日、ベルリンのプライドパレードでの#FreeBritneyのプラカード<span class=media-credit>Lucas Werkmeister / CC BY 4.0</span></figcaption></figure></div><div class="media-videos"><h4>参考動画</h4><ul class="video-list"><li class="video-item"><div class="video-embed"><iframe src="https://www.youtube.com/embed/7SJMg00HoR8" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div><p class="video-caption">『Framing Britney Spears』トレーラー（転載） <span class=media-credit>（Britney Online（非公式・タイトルに「Official Trailer」とあるが実チャンネルは非公式と確認））</span><br><a href="https://www.youtube.com/watch?v=7SJMg00HoR8" target="_blank" rel="noopener">https://www.youtube.com/watch?v=7SJMg00HoR8</a></p></li><li class="video-item"><div class="video-embed"><iframe src="https://www.youtube.com/embed/Z920uNiv1Eg" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div><p class="video-caption">『Controlling Britney Spears』ハイライト <span class=media-credit>（FX Networks（公式））</span><br><a href="https://www.youtube.com/watch?v=Z920uNiv1Eg" target="_blank" rel="noopener">https://www.youtube.com/watch?v=Z920uNiv1Eg</a></p></li></ul></div></div>
   <div class="detail lang-ja"><p>ファンの間で草の根運動として2019年に顕在化した「#FreeBritney」運動は、当初、ファン運営のポッドキャスト「Britney&#x27;s Gram」に寄せられた匿名の音声メッセージ(2019年4月)がきっかけとなり、同月22日にはウェストハリウッド市庁舎前で約50人規模の抗議行動が行われるまでに広がった。この運動が全米的な話題として一気に注目を集めるようになったのは、ニューヨーク・タイムズが製作した2本のドキュメンタリー——2021年2月5日公開の『Framing Britney Spears』(監督:サマンサ・スターク、テレビ批評家協会賞受賞)と、同年9月24日公開の続編『Controlling Britney Spears』(元警備会社従業員による証言・監視疑惑を扱う)——の存在が大きい。なお、いずれの作品にも本人が製作に直接関与した事実はない。この世論の高まりの時期は、同年6月の本人による法廷証言、9月の父ジェイミーの職務停止、11月の後見制度完全終了という一連の司法上の展開と重なっているが、世論の高まりがこれらの司法判断にどの程度直接的な因果を及ぼしたかについては、報道・評論の域を出ない推測であり、確定的な因果関係として扱うことはできない。</p></div>
   <div class="detail lang-orig"><p>The #FreeBritney movement crystallized in April 2019 following an anonymous voicemail aired on the fan podcast &#x27;Britney&#x27;s Gram,&#x27; with a West Hollywood protest on April 22. The NYT-produced &#x27;Framing Britney Spears&#x27; (Feb 5, 2021, dir. Samantha Stark) and sequel &#x27;Controlling Britney Spears&#x27; (Sept 24, 2021) brought the movement to mainstream attention, though neither involved Spears&#x27;s direct participation. The timing coincided with her June 2021 testimony, her father&#x27;s September suspension, and November&#x27;s conservatorship termination, though the precise causal weight of public pressure remains journalistic interpretation.</p></div>
   
@@ -406,7 +718,7 @@ body.show-orig .lang-ja{display:none}
   </header>
   <p class="summary lang-ja">ブリトニー・スピアーズは2021年6月23日、判事ブレンダ・ペニーの法廷で約24分間にわたり後見人制度下での虐待的な扱いを直接証言し、同年11月12日にペニー判事が後見人制度の完全終了を宣告した。</p>
   <p class="summary lang-orig">On June 23, 2021, Britney Spears testified for about 24 minutes before Judge Brenda Penny describing abusive treatment under the conservatorship; on November 12, 2021, Penny terminated the conservatorship entirely.</p>
-  <div class="media-block"><div class="media-images"><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Matthew_Rosengart_2.jpg" alt="2021年12月、後見人制度に関する審理後に話すマシュー・ローゼンガート弁護士（本人選任の独立弁護士）" loading="lazy"><figcaption>2021年12月、後見人制度に関する審理後に話すマシュー・ローゼンガート弁護士（本人選任の独立弁護士）<span class=media-credit>Jonathan Young / CC BY-SA 4.0</span></figcaption></figure></div><div class="media-videos"><h4>参考動画</h4><ul class="video-list"><li class="video-item video-link-only"><a href="https://www.youtube.com/watch?v=vUnv1OYxukE" target="_blank" rel="noopener">2021年6月法廷証言の音声（全文）</a> <span class=media-credit>（fiercegifs（非公式・ファン投稿。ただし音声内容自体はNPR等の報道で独立に検証済み））</span></li></ul></div></div>
+  <div class="media-block"><div class="media-images"><figure class="media-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Matthew_Rosengart_2.jpg" alt="2021年12月、後見人制度に関する審理後に話すマシュー・ローゼンガート弁護士（本人選任の独立弁護士）" loading="lazy"><figcaption>2021年12月、後見人制度に関する審理後に話すマシュー・ローゼンガート弁護士（本人選任の独立弁護士）<span class=media-credit>Jonathan Young / CC BY-SA 4.0</span></figcaption></figure></div><div class="media-videos"><h4>参考動画</h4><ul class="video-list"><li class="video-item"><div class="video-embed"><iframe src="https://www.youtube.com/embed/vUnv1OYxukE" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div><p class="video-caption">2021年6月法廷証言の音声（全文） <span class=media-credit>（fiercegifs（非公式・ファン投稿。ただし音声内容自体はNPR等の報道で独立に検証済み））</span><br><a href="https://www.youtube.com/watch?v=vUnv1OYxukE" target="_blank" rel="noopener">https://www.youtube.com/watch?v=vUnv1OYxukE</a></p></li></ul></div></div>
   <div class="detail lang-ja"><p>2021年6月23日、ブリトニー・スピアーズは電話回線を通じて、判事ブレンダ・ペニーの法廷で約24分間にわたる陳述を行った。これは後見制度が始まって以来、本人が直接、自らの言葉で法廷において発言した初めての機会だった。証言の中で彼女は、自身の置かれた状況を「性的人身売買に類するものだ」と表現し、避妊具(IUD)の除去を許されず結婚や妊娠の自由を制限されていたこと、意に反してリチウムを服用させられ酔ったような状態にされていたことなどを訴え、後見制度の即時終了と、この扱いに対する法的措置を取る意思を明確に表明した。この証言を受けて、7月14日には本人が希望する独立弁護士マシュー・ローゼンガートの選任が裁判所に承認され、9月29日には父ジェイミーが後見人の職務を停止され(暫定的にジョン・ザベルが後任となった)、そして11月12日、ペニー判事は約13年半に及んだ後見制度の完全な終了を宣告した。この6月証言については、NPR・Variety・DocumentCloud等の複数の媒体が独立に全文トランスクリプトを公開しており、内容の信頼性は高いと評価できる。</p><p>この証言が持つ重みは、後見制度が始まってから2021年6月までの13年以上の間、本人が法廷で直接発言する機会が一度も無かったという事実と対比すると際立つ。わずか24分間の陳述の中で、彼女は制度の終了だけでなく、これまでの扱いに対する法的な追及の意思も明確にしており、この証言以降、後見人・関係者の交代が急速に進んだ(9月の父の職務停止・11月の完全終了)ことからも、この証言が転換点として機能したことがうかがえる。</p></div>
   <div class="detail lang-orig"><p>On June 23, 2021, Spears testified by phone for ~24 minutes, describing abuse, being prevented from removing her IUD, being forced to work without rest, and being placed on Lithium against her will. She demanded immediate termination. July 14: independent counsel (Mathew Rosengart) approved. September 29: Jamie Spears suspended (John Zabel interim conservator). November 12: Judge Brenda Penny terminated the conservatorship after ~13.5 years. Full transcripts are published by NPR, Variety, and DocumentCloud, giving this event high reliability.</p></div>
   
