@@ -39,10 +39,29 @@ h1{font-size:1.7rem;margin:0 0 8px}
   box-shadow:0 2px 8px rgba(0,0,0,.15)}
 #lang-toggle:active{opacity:.85}
 .lang-note{font-size:.68rem;color:var(--muted);text-align:right;line-height:1.4}
+/* 2026-07-23島田さん指摘「スマホ表示に全く対応していない」への本格対応：
+   基準19px＋rem見出しがスマホ幅で1行5文字になる・左右48px余白・fixedトグルの本文重なり
+   を解消する。PC表示は不変（640px以下のみ） */
 @media (max-width:640px){
-  .lang-corner{max-width:150px}
+  html{font-size:16px}
+  body{padding:12px 14px 24px;overflow-x:clip}
+  img,iframe{max-width:100%}
+  *{min-width:0}
+  .lang-corner{position:static;flex-direction:row;justify-content:flex-end;max-width:none;
+    margin:0 0 6px}
   .lang-note{display:none}
-  header.page-head{padding-right:160px}
+  header.page-head{padding-right:0;padding-bottom:12px;margin-bottom:16px}
+  .t-line2{font-size:1.45rem;line-height:1.4}
+  .t-line4{font-size:1.15rem}
+  h1{font-size:1.3rem}
+  .concept-note{padding:14px 14px;margin-bottom:24px}
+  .part-head{margin-top:36px}
+  .part-title{font-size:1.2rem}
+  .event{padding:12px 12px}
+  .chapter-name{font-size:1.15rem}
+  .media-figure img{height:auto;max-height:300px}
+  .media-map iframe{height:180px}
+  .tl-item{padding-left:18px}
 }
 .event{border:1px solid var(--border);border-radius:8px;padding:16px 20px;margin:18px 0;
   page-break-inside:avoid}
@@ -79,7 +98,7 @@ h1{font-size:1.7rem;margin:0 0 8px}
 .summary{font-weight:bold}
 .detail p{margin:.6em 0}
 .sources{list-style:none;padding:0;font-size:.85rem}
-.sources li{margin:4px 0}
+.sources li{margin:4px 0;overflow-wrap:anywhere}
 .tier{font-size:.7rem;border-radius:8px;padding:1px 6px;margin-right:6px}
 .tier-primary{background:#2e7d32;color:#fff}
 .tier-secondary{background:#999;color:#fff}
